@@ -1,4 +1,222 @@
-h1{
-  color:Red;
-  background-color:#ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  color: rgb(85, 117, 57);
+  background-color: rgb(246, 233, 200);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.darkbg {
+  background-color: rgba(10, 25, 38, 0.95);
+}
+
+.navbar-brand {
+  color: rgb(246, 233, 200);
+  font-weight: 700;
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  color: rgb(246, 233, 200);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(160, 190, 115);
+}
+
+.profile-card {
+  width: min(90%, 850px);
+  margin: 35px auto 60px;
+  padding: 30px;
+  color: rgb(85, 117, 57);
+  background-color: rgb(241, 228, 195);
+  border: none;
+  border-radius: 16px;
+}
+
+.pps {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.profile-card .card-title {
+  font-size: 1.8rem;
+}
+
+.profile-card .card-body {
+  padding: 0;
+}
+
+.profile-card .card-text {
+  line-height: 1.8;
+}
+
+.contact-links {
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact-links .nav-link {
+  color: rgb(10, 25, 38);
+}
+
+.contact-links .nav-link:hover {
+  color: rgb(85, 117, 57);
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px 24px 60px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.project-card {
+  height: 100%;
+  overflow: hidden;
+  color: rgb(85, 117, 57);
+  background-color: rgb(10, 25, 38);
+  border: 1px solid rgba(85, 117, 57, 0.35);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(10, 25, 38, 0.18);
+}
+
+.project-card .card-img-top {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background-color: rgb(241, 228, 195);
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.project-card .card-title {
+  color: rgb(160, 190, 115);
+  font-size: 1.3rem;
+}
+
+.project-card .card-text {
+  flex-grow: 1;
+  color: rgb(246, 233, 200);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.project-links .btn {
+  margin: 0;
+}
+
+#skills {
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  height: 100%;
+  padding: 24px;
+  background-color: rgb(241, 228, 195);
+  border: none;
+  border-radius: 12px;
+}
+
+.skill-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.skill-card ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+  line-height: 1.9;
+}
+
+footer {
+  padding: 20px;
+  color: rgb(246, 233, 200);
+  background-color: rgb(10, 25, 38);
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .profile-card {
+    width: 92%;
+    padding: 22px;
+    margin-top: 25px;
+  }
+
+  .pps {
+    width: 140px;
+    height: 140px;
+  }
+
+  .section-container {
+    padding: 24px 16px 40px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .project-card .card-img-top {
+    height: 180px;
+  }
 }
